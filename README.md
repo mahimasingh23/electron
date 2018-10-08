@@ -1,6 +1,4 @@
 [![Electron Logo](https://electronjs.org/images/electron-logo.svg)](https://electronjs.org)
-
-
 [![CircleCI Build Status](https://circleci.com/gh/electron/electron/tree/master.svg?style=shield)](https://circleci.com/gh/electron/electron/tree/master)
 [![AppVeyor Build Status](https://windows-ci.electronjs.org/api/projects/status/nilyf07hcef14dvj/branch/master?svg=true)](https://windows-ci.electronjs.org/project/AppVeyor/electron/branch/master)
 [![devDependency Status](https://david-dm.org/electron/electron/dev-status.svg)](https://david-dm.org/electron/electron?type=dev)
@@ -68,18 +66,15 @@ npm start
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
 ## Programmatic usage
-
 Most people use Electron from the command line, but if you require `electron` inside
 your **Node app** (not your Electron app) it will return the file path to the
 binary. Use this to spawn Electron from Node scripts:
-
 ```javascript
 const electron = require('electron')
 const proc = require('child_process')
 
 // will print something similar to /Users/maf/.../Electron
 console.log(electron)
-
 // spawn Electron
 const child = proc.spawn(electron)
 ```
